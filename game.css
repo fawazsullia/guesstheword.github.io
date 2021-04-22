@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.headingcontainer{
+    text-align: center;
+    margin-top: 50px;
+    color: #00539CFF
+}
+
+.game-container{
+
+    width: 60vw;
+    margin: auto;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.alphabet{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    padding: 5px;
+    box-shadow: 1px 1px 3px 1px black;
+
+}
+
+.wordletter {
+    width: 30px;
+    height: 30px;
+border: none;
+border-bottom: black solid 1px; 
+padding: 10px;
+margin-left: 15px;
+margin-bottom: 50px;
+
+}
+
+.wordsection{
+
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lettersection{
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.bg{
+    background-color: red;
+    color: white;
+}
+
+.gameover{
+    visibility: hidden;
+position: absolute;
+left: 50%;
+top: 50%;
+margin-left: -20vw;
+margin-top: -15vh;
+border: solid 1px;
+padding: 10px;
+width: 40vw;
+background-color:#00539CFF;
+height: 30vh;
+text-align: center;
+transition-duration: 0.5;
+color: white;
+
+}
+
+.viewgameover{
+    visibility: visible;
+}
+
+.win{
+    visibility: hidden;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -20vw;
+    margin-top: -15vh;
+    border: solid 1px;
+    padding: 10px;
+    width: 40vw;
+    background-color:#00539CFF;
+    height: 30vh;
+    text-align: center;
+    transition-duration: 0.5;
+    color: white;
+
+}
+
+.viewwin{
+    visibility: visible;
+}
+
+.blurr{
+background-color: rgba(0, 0, 0, 0.4) ;
+}
+
+@media (max-width: 600px) {
+
+    .wordletter{
+        width: 10px;
+        margin-top: 10px;
+    }
+
+    .game-container{
+        margin-top: 5vh;
+        width: 70vw;
+    }
+
+    .lettersection{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 480px) {
+
+    .wordletter{
+        width: 5px;
+        margin-top: 0px;
+    }
+
+    .game-container{
+        margin-top: 3vh;
+    }
+
+    .alphabet{
+        font-size: 14px;
+    }
+
+    .wordletter{
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .win {
+        width : 70vw;
+        margin-left: -35vw;
+
+    }
+
+    .gameover{
+        width : 70vw;
+        margin-left: -35vw;
+    }
+    
+    
+}

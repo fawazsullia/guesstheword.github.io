@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="headingcontainer">
+<h1>Guess the word</h1>
+<p>You have 5 chances</p>
+<div><h2>Chances Left : <span id="chancesleft">5</span></h2></div>
+</div>
+    <div class="game-container">
+    <div class="wordsection">
+
+
+    </div>
+    <div class="lettersection">
+
+    </div>
+</div>
+
+    <div class="gameover">
+        <h2>Game Over</h2>
+        <p>You have 0 chances left</p>
+        <p id="correctword"></p>
+        <button type="button" id="game-over">Play Again</button>
+    </div>
+
+    <div class="win">
+<h2>You win!</h2>
+<p>You guessed the word right</p>
+<button type="button" id="won">Play Again</button>
+
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
