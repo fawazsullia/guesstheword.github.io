@@ -13,7 +13,9 @@ margin-top: 70px
 
 h1{
     text-align: center;
-    font-size: 5rem;
+    font-size: 3rem;
+    color: #00539CFF
+
 }
 
 p{
@@ -22,8 +24,12 @@ p{
 }
 
 ul{
-    list-style-type: none;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+width: 50vw;}
+
+li{
+    text-align: left;
 }
 
 button{
@@ -32,4 +38,23 @@ button{
     display: block;
     margin-top: 40px;
     width: 70px;
+    background-color:  #00539CFF;
+    height: 30px;
+    color: white;
+    border: none;
+}
+
+@media  (max-width:480px) {
+
+    h1{
+    font-size: 2.5rem;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+
+    li{
+     font: 0.8rem;
+    }
 }

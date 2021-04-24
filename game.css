@@ -134,6 +134,8 @@ background-color: rgba(0, 0, 0, 0.4) ;
     .wordletter{
         width: 5px;
         margin-top: 0px;
+        margin-bottom: 25px;
+        height: 20px;
     }
 
     .game-container{
@@ -158,6 +160,10 @@ background-color: rgba(0, 0, 0, 0.4) ;
     .gameover{
         width : 70vw;
         margin-left: -35vw;
+    }
+
+    .wordsection {
+        margin-top: 40px;
     }
     
     
