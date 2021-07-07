@@ -72,6 +72,7 @@ document.getElementById(selectedLetter).classList.add("bg");
      filledCount = filledCount + indexes.length;
 
      if(filledCount===wordarray.length){
+         document.querySelectorAll(".alphabet").forEach(each=> {each.removeEventListener('click', selectLetter)});
          document.querySelector(".win").classList.add("viewwin")
      }
 
@@ -84,6 +85,7 @@ falseCount++;
 console.log(falseCount)
 if(falseCount===5){
     //game over when falsecount === 5
+    document.querySelectorAll(".alphabet").forEach(each=> {each.removeEventListener('click', selectLetter)});
     document.querySelector(".gameover").classList.add("viewgameover");
     document.getElementById("correctword").innerText = `The correct word was: ${fetchword}`;
 }
