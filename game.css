@@ -58,6 +58,10 @@ margin-bottom: 50px;
     margin: auto;
 }
 
+.lettersection:hover{
+cursor : pointer;
+}
+
 .bg{
     background-color: red;
     color: white;
